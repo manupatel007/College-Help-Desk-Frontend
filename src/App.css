@@ -1,38 +1,165 @@
-.App {
-  text-align: center;
+.container h1{
+    color: white;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* headDiv */
+#headDiv{                       /*This is shared between 1st Div of landing and about us page*/
+    border-radius: 15px ;
+    height: 600px;
+    background-color: #041228;
+    border: 2px solid #002766;
+    margin: 1px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#headDiv1{
+    display: flex;
+    align-items: flex-end;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#headDiv2{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
 }
 
-.App-link {
-  color: #61dafb;
+img{
+    width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#headContent{
+    color: white;
+    letter-spacing: 2px;
+    padding-left: 30px;
+}
+#headContent h1{
+    font-size: 50px;
+    letter-spacing: 5px;
+    font-weight: 700;
+}
+#headContent h2{
+    font-size: 35px;
+    letter-spacing: 10px;
+    font-weight: 600;
+}
+#headContent p{
+    font-size: 15px;
+    font-weight: 700;
+}
+
+/* Card */
+#colCard{
+    display: flex;
+    justify-content: center;
+}
+
+/*Space*/
+#space{
+    height: 50px;
+}
+
+/* Get Started Button */
+#getStartBtn{
+    color: white;
+    font-weight: lighter;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#getStartBtn a{
+    text-decoration: none;
+    padding: 5px 15px 5px 15px;
+}
+#getStartBtn a:hover{
+    color: white;
+    border : 1px solid white;
+    padding: 5px 15px 5px 15px;
+    border-radius: 30px;
+}
+
+/* About Us Page */
+#aboutUsHeadDiv{
+    border-radius: 15px ;
+    background-color: #041228;
+    border: 2px solid #002766;
+    margin: 1px;
+}
+#aboutheadDiv1 h1{
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 45px;
+    font-weight: 500;
+}
+#aboutheadDiv2 h3{
+    color: white;
+}
+#aboutheadDiv2 p{
+    color: lightblue;
+}
+
+#IDCard{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+
+/* Contact Us page */
+#contactUsHeadDiv{
+    border-radius: 15px ;
+    background-color: #041228;
+    border: 2px solid #002766;
+    margin: 1px;
+}
+#contactUsHeading{
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+/* Contact Us form*/
+.form-control{
+    background-color:#0E2744;
+    color:white ;
+    border: 2px solid gray;
+}
+
+#contactBtn{
+    background-color:#3AC8DB;
+    border: 2px solid #3AC8DB;
+    padding: 10px;
+    width: 100px;
+    color:white;
+    border-radius: 50px;
+}
+
+/* Blog page */
+#blogHeadDiv{
+    border-radius: 15px ;
+    background-color: #041228;
+    border: 2px solid #002766;
+    margin: 1px;
+}
+#blogHeading{
+    text-align: center;
+    letter-spacing: 3px;
+}
+#blogheadDiv2 p{
+    color:white
+}
+
+/* Department Page */
+#departmentHeadDiv{
+    border-radius: 15px ;
+    background-color: #041228;
+    border: 2px solid #002766;
+    padding: 50px 20px 50px 20px;
+    margin: 1px;
+}
+
+#departmentHeadDiv h1{
+    text-align: center;
+}
+
+#departmentHeadDiv p{
+    color: lightblue;
 }
