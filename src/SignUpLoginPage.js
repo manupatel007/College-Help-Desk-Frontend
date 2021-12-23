@@ -1,5 +1,6 @@
 import './SignUpLogin.css'
 import {useNavigate} from 'react-router-dom';
+import Info from './GlobalVars';
 
 function SignUpLoginPage() {
 
@@ -83,6 +84,8 @@ function SignUpLoginPage() {
 				token: json.access
 			})
 			);
+			Info.islogin = true;
+			Info.username = e.target.name.value;
 			navigate('/');
 		})
 

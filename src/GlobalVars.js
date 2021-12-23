@@ -26,7 +26,9 @@ const Info = {
     "1":"1st Year",
     "2":"2nd Year",
     "3":"3rd Year",
-    "4":"4th Year"
+    "4":"4th Year",
+    "islogin":false,
+    "username":""
 }
 
 export default Info
