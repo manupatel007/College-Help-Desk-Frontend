@@ -26,7 +26,6 @@ function LandingPage() {
       <section id="LandingPageTop">
         <div className="container">
           <div id="headDiv" className="row">
-            <div></div>
             <Navbar />
             <div id="headDiv1" className="col-lg-5 col-md-5 col-sm-12">
               <div id="headContent">
