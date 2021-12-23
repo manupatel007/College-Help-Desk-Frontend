@@ -2,6 +2,7 @@ import React from 'react'
 import './App.css';
 import Footer from "./Components/Footer";
 import BlogCard from "./Components/BlogCard";
+import Navbar from './Components/Navbar';
 
 function Blog() {
     return (
@@ -9,8 +10,8 @@ function Blog() {
             <section id="blogPageTop">
                 <div className="container">
                     <br/>
-                    <div id="blogHeadDiv" style={{padding: '40px'}}>
-                        <div id="space"></div>
+                    <div id="blogHeadDiv" style={{padding: '20px 30px 30px 30px'}}>
+                        <Navbar/>
                         <div id="space"></div>
 
                         <div id="blogHeading" className="row">

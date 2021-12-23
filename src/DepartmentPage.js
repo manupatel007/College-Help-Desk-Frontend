@@ -9,12 +9,16 @@ import { AiOutlineBook } from "react-icons/ai";
 import { AiOutlineFileText } from "react-icons/ai";
 import { AiOutlineDesktop } from "react-icons/ai";
 
+import Navbar from './Components/Navbar';
+
 function DepartmentPage() {
     return (
         <>
             <br/>
             <div className="container">
                 <div id="departmentHeadDiv" className="row">
+                    <Navbar/>
+                    <div id="space"></div>
                     <h1>COMPUTER SCIENCE (4th Year)</h1>
                     <div id="space"></div>
                     <p>Computer Science Engineering is a course that deals with design, implementation, and management of information systems of both software & hardware processes. A computer scientist specializes in theory of computation and design of computational systems. Computer Science engineering aids with various disciplines such as electrical and electronics engineering, information technology, software engineering, and more. </p>

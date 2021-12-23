@@ -6,7 +6,7 @@ import image2 from './photo/Anshul-pic.jpg';
 import image3 from './photo/Sudhanshu-pic.jpg';
 import image4 from './photo/Tarun-pic.jpg';
 import image5 from './photo/Vishwas-pic.jpg';
-
+import Navbar from './Components/Navbar';
 
 
 function AboutPage() {
@@ -16,7 +16,7 @@ function AboutPage() {
             <div className="container">
                 <br/>
                 <div id="aboutUsHeadDiv" style={{padding: '40px'}}>
-                    <div id="space"></div>
+                    <Navbar/>
                     <div id="space"></div>
                     <div id="aboutheadDiv1" className="row">
                         <h1>ABOUT US</h1>

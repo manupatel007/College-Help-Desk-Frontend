@@ -7,6 +7,7 @@ import { BsTelephone } from "react-icons/bs";
 import { BsEnvelopeOpen } from "react-icons/bs";
 import { BsGeoAlt } from "react-icons/bs";
 import { BsCursor } from "react-icons/bs";
+import Navbar from "./Components/Navbar";
 
 
 function ContactUsPage() {
@@ -15,8 +16,8 @@ function ContactUsPage() {
         <section id="contactUsPageTop">
             <div className="container">
                 <br/>
-                <div id="contactUsHeadDiv" style={{padding: '40px'}}>
-                    <div id="space"></div>
+                <div id="contactUsHeadDiv" style={{padding: '20px 30px 20px 30px'}}>
+                    <Navbar/>
                     <div id="space"></div>
 
                     <div id="contactUsHeading" className="row">

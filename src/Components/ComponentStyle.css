@@ -294,7 +294,7 @@ nav{
     background-color: #0e2744;
     border: 2px solid #002766;
     width: 85%;
-    height: 55px;
+    height: 60px;
     border-radius: 50px;
 }
 
@@ -313,7 +313,7 @@ ul{
 }
 
 li{
-    
+    border: 2px solid #0e2744;
     border-radius: 20px;
     padding: 5px 20px 5px 20px;
     font-weight: 500;
@@ -321,18 +321,21 @@ li{
 }
 li:hover{
     background-color: #041228;
+    border: 2px solid #002766;
     border-radius: 20px;
     padding: 5px 20px 5px 20px;
     color: white;
 }
 #ls{
     background-color: lightgray;
+    border: 1px solid gray;
     border-radius: 20px;
     padding: 5px 20px 5px 20px;
     color: black;
 }
 #ls:hover{
     background-color: #041228;
+    border: 1px solid #002766;
     border-radius: 20px;
     padding: 5px 20px 5px 20px;
     color: white;
