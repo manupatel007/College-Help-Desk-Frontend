@@ -5,7 +5,7 @@ import { BsArrowUpShort } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
 import Emoji from 'a11y-react-emoji';
 
-import "D:/collegeBuddy/collegebuddy/src/Components/ComponentStyle.css";
+import "./ComponentStyle.css";
 
 function Footer(props) {
     return (

@@ -1,5 +1,5 @@
 import React from 'react';
-import "D:/collegeBuddy/collegebuddy/src/Components/ComponentStyle.css";
+import "./ComponentStyle.css";
 
 
 function DepartmentCard(props) {

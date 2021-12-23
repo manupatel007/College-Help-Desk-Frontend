@@ -19,6 +19,7 @@ import image6 from './photo/MDI.jpg';
 import Navbar from './Components/Navbar';
 
 function LandingPage() {
+
   return (
     <>
       <br/>
@@ -56,24 +57,24 @@ function LandingPage() {
         <div className="container">
           <div className="row">
             <div id="colCard" className="col-lg-4 col-md-4 col-sm-12">
-              <Card img={image1} symbol={<BsAward size={30}/>} department="Computer Science Department"/>
+              <Card img={image1} symbol={<BsAward size={30}/>} department="Computer Science Department" depid="CS"/>
             </div>
             <div id="colCard" className="col-lg-4 col-md-4 col-sm-12">
-              <Card img={image2} symbol={<BsLaptop size={30}/>} department="Information Technology Department"/>
+              <Card img={image2} symbol={<BsLaptop size={30}/>} department="Information Technology Department" depid="IT"/>
             </div>
             <div id="colCard" className="col-lg-4 col-md-4 col-sm-12">
-              <Card img={image3} symbol={<BsCpu size={30}/>} department="Electronics & Comm. Department"/>
+              <Card img={image3} symbol={<BsCpu size={30}/>} department="Electronics & Comm. Department" depid="EC"/>
             </div>
           </div>
           <div className="row">
             <div id="colCard" className="col-lg-4 col-md-4 col-sm-12">
-              <Card img={image4} symbol={<BsLightbulb size={30}/>} department="Electrical Engineering Department"/>
+              <Card img={image4} symbol={<BsLightbulb size={30}/>} department="Electrical Engineering Department" depid="EE"/>
             </div>
             <div id="colCard" className="col-lg-4 col-md-4 col-sm-12">
-              <Card img={image5} symbol={<BsBuilding size={30}/>} department="Civil Engineering Department"/>
+              <Card img={image5} symbol={<BsBuilding size={30}/>} department="Civil Engineering Department" depid="CE"/>
             </div>
             <div id="colCard" className="col-lg-4 col-md-4 col-sm-12">
-              <Card img={image6} symbol={<BsTools size={30}/>} department="Mechanical Engineering Department"/>
+              <Card img={image6} symbol={<BsTools size={30}/>} department="Mechanical Engineering Department" depid="ME"/>
             </div>
           </div>
         </div>

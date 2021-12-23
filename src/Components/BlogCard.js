@@ -1,7 +1,10 @@
 import React from 'react'
-import "D:/collegeBuddy/collegebuddy/src/Components/ComponentStyle.css";
+import "./ComponentStyle.css";
 
 function BlogCard(props) {
+    const navigate = () => {
+        window.location.href= props.url;
+    }
     return (
         <>
         <br/><br/>
@@ -13,7 +16,7 @@ function BlogCard(props) {
                             <div className="col-lg-7 col-md-7 col-sm-7">{props.blogimage}</div>
                             <div id="blogContent" className="col-lg-5 col-md-5 col-sm-5">
                                 <p>{props.blogdescription}</p>
-                                <button type="button" id="readBtn" class="btn btn-light">READ MORE ...</button>
+                                <button type="button" id="readBtn" class="btn btn-light" onClick={() => navigate()}>READ MORE ...</button>
                             </div>
                         </div>
                     </div> 

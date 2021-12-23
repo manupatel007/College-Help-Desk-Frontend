@@ -6,6 +6,8 @@ import ContactUsPage from "./ContactUsPage";
 import Navbar from "./Components/Navbar";
 import Blog from "./Blog";
 import DepartmentPage from "./DepartmentPage";
+import Resource from "./StudyResource";
+import SignUpLoginPage from "./SignUpLoginPage";
 // import SignUpLoginPage from "./SignUpLoginPage";
 
 export default function App() {
@@ -17,7 +19,8 @@ export default function App() {
       <Route path="/nav" element={<Navbar/>} />
       <Route path="/blog" element={<Blog/>} />
       <Route path="/Dep" element={<DepartmentPage/>} />
-      {/* <Route path="/signup" element={<SignUpLoginPage/>} /> */}
+      <Route path="/resource" element={<Resource/>} />
+      <Route path="/signup" element={<SignUpLoginPage/>} />
     </Routes>
   );
 }

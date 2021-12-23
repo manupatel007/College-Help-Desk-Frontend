@@ -1,4 +1,4 @@
-import "D:/collegeBuddy/collegebuddy/src/Components/ComponentStyle.css";
+import "./ComponentStyle.css";
 
 function Navbar() {
     return (
