@@ -76,13 +76,9 @@ function Resource() {
                         </div>
                         <div className="col-lg-4 col-md-12 col-sm-12" style={{padding: '0 30px 0 30px'}}>
                             <div id="space"></div>
-                            <div><h6 style={{fontWeight: '700', color: 'lightgray', fontSize: '15px'}}>Popular Languages</h6></div>
+                            <div><h6 style={{fontWeight: '700', color: 'lightgray', fontSize: '15px'}}>No new Anouncements</h6></div>
                             <div>
                                 <div className="row" style={{fontSize: '12px', color: 'lightgray', textAlign: 'center'}}>
-                                    <div style={{ width:'30%', backgroundColor:'#041228', borderRadius: '3px', margin: '5px', paddingTop: '4px', paddingBottom: '4px'}}>C++</div>
-                                    <div style={{ width:'30%', backgroundColor:'#041228', borderRadius: '3px', margin: '5px', paddingTop: '4px', paddingBottom: '4px'}}>Java</div>
-                                    <div style={{ width:'25%', backgroundColor:'#041228', borderRadius: '3px', margin: '5px', paddingTop: '4px', paddingBottom: '4px'}}>C</div>
-                                    <div style={{ width:'40%', backgroundColor:'#041228', borderRadius: '3px', margin: '5px', paddingTop: '4px', paddingBottom: '4px'}}>Python</div>
                                 </div>
                             </div>
                         </div>
