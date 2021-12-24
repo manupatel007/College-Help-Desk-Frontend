@@ -16,7 +16,7 @@ function Resource() {
     const heading = location.state.heading;
 
     function getResource(){
-        fetch("https://botchat.vishwas007.repl.co/chats/resource/", {
+        fetch("https://collegebackenc.herokuapp.com/chats/resource/", {
         method: "POST",
         body: JSON.stringify({
             branch: branch,

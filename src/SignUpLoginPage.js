@@ -9,7 +9,7 @@ function SignUpLoginPage() {
 	function signup(e) {
 		e.preventDefault();
 		// console.log(e.target.fhead.value);
-		fetch("https://botchat.vishwas007.repl.co/chats/register/phir/", {
+		fetch("https://collegebackenc.herokuapp.com/chats/register/phir/", {
 		  // Adding method type
 		  method: "POST",
 	
@@ -47,7 +47,7 @@ function SignUpLoginPage() {
 	  function login(e) {
 		e.preventDefault();
 		// console.log(e.target.email.value);
-		fetch("https://botchat.vishwas007.repl.co/chats/token/", {
+		fetch("https://collegebackenc.herokuapp.com/chats/token/", {
 		// Adding method type
 		method: "POST",
 
