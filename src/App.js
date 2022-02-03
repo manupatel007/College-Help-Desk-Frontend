@@ -8,7 +8,10 @@ import Blog from "./Blog";
 import DepartmentPage from "./DepartmentPage";
 import Resource from "./StudyResource";
 import SignUpLoginPage from "./SignUpLoginPage";
-// import SignUpLoginPage from "./SignUpLoginPage";
+import Dashboard from "./Dashboard";
+import Error404Page from "./Error404Page";
+
+
 
 export default function App() {
   return (
@@ -21,6 +24,8 @@ export default function App() {
       <Route path="/Dep" element={<DepartmentPage/>} />
       <Route path="/resource" element={<Resource/>} />
       <Route path="/signup" element={<SignUpLoginPage/>} />
+      <Route path="/dashboard" element={<Dashboard/>} />
+      <Route path="/error" element={<Error404Page/>} />
     </Routes>
   );
 }

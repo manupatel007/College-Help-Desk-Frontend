@@ -6,16 +6,16 @@
 	align-items: center;
 	min-height: 100vh;
 	font-family: 'Jost', sans-serif;
-	background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
 }
 .main{
 	width: 350px;
 	height: 500px;
-	background: red;
+	background-color: #041228;
 	overflow: hidden;
-	background: url("https://doc-08-2c-docs.googleusercontent.com/docs/securesc/68c90smiglihng9534mvqmq1946dmis5/fo0picsp1nhiucmc0l25s29respgpr4j/1631524275000/03522360960922298374/03522360960922298374/1Sx0jhdpEpnNIydS4rnN4kHSJtU1EyWka?e=view&authuser=0&nonce=gcrocepgbb17m&user=03522360960922298374&hash=tfhgbs86ka6divo3llbvp93mg4csvb38") no-repeat center/ cover;
-	border-radius: 10px;
-	box-shadow: 5px 20px 50px #000;
+	/* background: url("https://doc-08-2c-docs.googleusercontent.com/docs/securesc/68c90smiglihng9534mvqmq1946dmis5/fo0picsp1nhiucmc0l25s29respgpr4j/1631524275000/03522360960922298374/03522360960922298374/1Sx0jhdpEpnNIydS4rnN4kHSJtU1EyWka?e=view&authuser=0&nonce=gcrocepgbb17m&user=03522360960922298374&hash=tfhgbs86ka6divo3llbvp93mg4csvb38") no-repeat center/ cover; */
+	border-radius: 15px;
+	border: 2px solid #002766;
+	box-shadow: 1px 1px 30px #041228;
 }
 #chk{
 	display: none;
@@ -42,10 +42,10 @@
 	justify-content: center;
 	display: flex;
 	margin: 20px auto;
-	padding: 10px;
+	padding: 15px;
 	border: none;
 	outline: none;
-	border-radius: 5px;
+	border-radius: 10px;
 }
 .button{
 	width: 60%;
@@ -53,29 +53,27 @@
 	margin: 10px auto;
 	justify-content: center;
 	display: block;
-	color: #fff;
-	background: #573b8a;
+	color: white;
+	background-color: #041228;
 	font-size: 1em;
-	font-weight: bold;
+	font-weight: normal;
 	margin-top: 20px;
 	outline: none;
-	border: none;
-	border-radius: 5px;
+	border: 1px solid white;
+	border-radius: 50px;
 	transition: .2s ease-in;
 	cursor: pointer;
 }
-.button:hover{
-	background: #6d44b8;
-}
+
 .login{
 	height: 460px;
-	background: #eee;
+	background: #002766;
 	border-radius: 60% / 10%;
 	transform: translateY(-180px);
 	transition: .8s ease-in-out;
 }
 .login label{
-	color: #573b8a;
+	color: white;
 	transform: scale(.6);
 }
 
@@ -87,4 +85,18 @@
 }
 #chk:checked ~ .signup label{
 	transform: scale(.6);
+}
+
+.signUpPageBtn{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0 0 40px 0;
+}
+.signUpPageBtn button{
+	background: #002766;
+	border: 1px solid #041228;
+	color: white;
+	padding: 10px 20px;
+	border-radius: 10px;
 }

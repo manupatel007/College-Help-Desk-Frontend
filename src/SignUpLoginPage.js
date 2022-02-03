@@ -1,6 +1,11 @@
 import './SignUpLogin.css'
-import {useNavigate} from 'react-router-dom';
+import {useNavigate, Link} from 'react-router-dom';
 import Info from './GlobalVars';
+
+import { BsPersonPlus } from 'react-icons/bs';
+import { BsPersonCheck } from 'react-icons/bs';
+import Navbar from './Components/Navbar';
+
 
 function SignUpLoginPage() {
 
@@ -93,30 +98,37 @@ function SignUpLoginPage() {
 	  }
 
 	return (
+		<>
+		
 		<div className="body">
 			<div class="main">  	
-			<input type="checkbox" id="chk" aria-hidden="true"/>
+				<input type="checkbox" id="chk" aria-hidden="true"/>
 
 				<div class="signup">
 					<form onSubmit={(e) => signup(e)}>
-						<label className="label" for="chk" aria-hidden="true">Sign up</label>
-						<input className="input" type="text" name="name" placeholder="User name" required=""/>
-						<input className="input" type="email" name="email" placeholder="Email" required=""/>
-						<input className="input" type="password" name="password" placeholder="Password" required=""/>
-						<button className="button">Sign up</button>
+						<label className="label" for="chk" aria-hidden="true">Sign Up</label>
+						<input className="input" type="text" name="name" placeholder="Username" required="" style={{fontSize:'15px'}}/>
+						<input className="input" type="email" name="email" placeholder="Email" required="" style={{fontSize:'15px'}}/>
+						<input className="input" type="password" name="password" placeholder="Password" required="" style={{fontSize:'15px'}}/>
+						<button className="button">SIGN UP</button>
 					</form>
 				</div>
 
 				<div class="login">
 					<form onSubmit={(e) => login(e)}>
-						<label className="label" for="chk" aria-hidden="true">Login</label>
-						<input className="input" type="text" name="name" placeholder="username" required=""/>
-						<input className="input" type="password" name="password" placeholder="Password" required=""/>
-						<button className="button">Login</button>
+						<label className="label" for="chk" aria-hidden="true">Log In</label>
+						<input className="input" type="text" name="name" placeholder="Username" required="" style={{fontSize:'15px'}}/>
+						<input className="input" type="password" name="password" placeholder="Password" required="" style={{fontSize:'15px'}}/>
+						<button className="button">LOGIN</button>
 					</form>
 				</div>
+			</div>
 		</div>
-	</div>
+
+		<div className="signUpPageBtn">
+			<Link to="/"><button type='button'>Home</button></Link>
+		</div>
+	</>
 	)
 }
 

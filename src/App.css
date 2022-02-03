@@ -164,3 +164,140 @@ img{
 #departmentHeadDiv p{
     color: lightblue;
 }
+
+
+/* Study Resource Page */
+#studyResoCards{
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 20px 0;
+}
+
+
+/* Dashboard */
+#dashHeading{
+    
+}
+#dashHeading .dashIcon{
+    border: 1px solid white;
+    border-radius: 50%;
+    width:35px;
+    height: 35px;
+    padding: 1px 0 2px 7px;
+}
+
+#panel{
+    border: 2px solid #002766;
+    background-color: #041228;
+    border-radius: 15px;  
+    padding: 50px; 
+}
+#panel .dashIcon{
+    width: 20%;
+}
+#panel .dashIcon img{
+    border-radius: 50%;
+    width: 150px;
+    border: 3px solid #002766;
+}
+#panel .dashName{
+    margin: auto;
+    width: 80%;
+}
+#panel .dashName h2{
+    color: white;
+}
+#panel .dashName p{
+    color: gray;
+    font-size: 15px;
+    letter-spacing: 0.3px;
+}
+
+#saveAndBookmark{
+    color: lightgray;
+}
+#saveAndBookmark #saveItem{
+    height: 200px;
+    border: 2px solid #002766;
+    background-color: #041228;
+    border-radius: 15px;
+    margin-top: 30px;
+    padding: 20px;
+}
+#saveAndBookmark #saveItem p{
+    font-size: 14px;
+    color: gray;
+}
+#saveAndBookmark #bookmarkItem{
+    height: 200px;
+    margin-top: 30px;
+    padding-left: 20px;
+}
+#saveAndBookmark #bookmarkItem p{
+    font-size: 14px;
+    background-color: #041228;
+    padding: 3px 0 3px 10px;
+    border: 1px solid #002766;
+    border-radius: 10px;
+    margin: 5px 0 0 0;
+    color: gray;
+}
+
+
+@media (max-width:800px) {
+    #panel .dashIcon{
+        width: 30%;
+    }
+    #panel .dashName{
+        width: 70%;
+    }
+}
+@media (max-width:500px) {
+    #panel{
+        padding: 20px;
+    }
+    #panel .dashName h2{
+        font-size: 20px;
+        font-weight: 700;
+    }
+    #panel .dashName p{
+        font-size: 12px;
+    }
+    #panel .dashIcon{
+        width: 40%;
+    }
+    #panel .dashIcon img{
+        width: 120px;
+    }
+    #panel .dashName{
+        width:60%;
+    }
+}
+
+
+/* Error 404 Page */
+#errorCont{
+    display: flex;
+    justify-content: center;
+}
+#errorCont img{
+    padding-top: 100px;
+    width: 70%;
+    height: auto;
+    
+}
+.errorBtn{
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+}
+.errorBtn button{
+    border: 1px solid #041228;
+    background-color: #0E2744;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-weight: 600;
+}
+.errorBtn button:hover{
+    color:lightgray
+}

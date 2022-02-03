@@ -91,6 +91,9 @@
     text-align: center;
     padding: 20px;    
 }
+a{
+    text-decoration: none;    
+}
 #CardBody .row h4{
     font-weight: 600;
     font-size: 23px;
@@ -123,109 +126,6 @@
     color:gray;
     font-size: 15px;
 }
-
-/* Navbar */
-
-/*  
-nav{ 
-    display: flex; 
-    height: 60px; 
-    width: 90%; 
-    margin-top: 20px; 
-     
-    background: #0E2744 ;
-    border-radius: 30px; 
-    align-items: center; 
-    justify-content: space-between; 
-    padding: 0 50px 0 100px; 
-    flex-wrap: wrap; 
-} 
-    nav .logo{ 
-        color: #fff; 
-        font-size: 30px; 
-        font-weight: 500; 
-    } 
-    nav ul{ 
-        display: flex; 
-        flex-wrap: wrap; 
-        list-style: none; 
-    } 
-    nav ul li{ 
-        margin: 0 5px; 
-    } 
-    nav ul li a{ 
-        color: #f2f2f2; 
-        text-decoration: none; 
-        font-size: 16px; 
-        font-weight: 400; 
-        padding: 8px 15px; 
-        border-radius: 5px; 
-        letter-spacing: 1px; 
-        transition: all 0.2s ease; 
-    } 
-    
-    nav ul li a:hover{ 
-        color: #041228; 
-        background: #fff; 
-        border-radius: 20px; 
-    } 
-    nav .menu-btn i{ 
-        color: #fff; 
-        font-size: 22px; 
-        cursor: pointer; 
-        display: none; 
-    } 
-    input[type="checkbox"]{ 
-        display: none; 
-    } 
-  
-    @media (max-width: 1000px){ 
-        nav{ 
-        padding: 0 40px 0 50px; 
-        } 
-    } 
-    @media (max-width: 920px) { 
-    nav .menu-btn i{ 
-      display: block; 
-    } 
-    #click:checked ~ .menu-btn i:before{ 
-      content: "\f00d"; 
-    } 
-    nav ul{ 
-      position: fixed; 
-      top: 81px; 
-      left: -100%; 
-      background: #041228; 
-      height: 100vh; 
-      width: 100%; 
-      border-radius: 30px; 
-      text-align: center; 
-      display: block; 
-      transition: all 0.3s ease; 
-    } 
-    #click:checked ~ ul{ 
-      left: 0; 
-    } 
-    nav ul li{ 
-      width: 100%; 
-      margin: 40px 0; 
-    } 
-    nav ul li a{ 
-      width: 100%; 
-      margin-left: -100%; 
-      display: block; 
-      font-size: 20px; 
-      transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55); 
-    } 
-    #click:checked ~ ul li a{ 
-      margin-left: 0px; 
-    } 
-    nav ul li a.active, 
-    nav ul li a:hover{ 
-      background: none; 
-      color: cyan; 
-    } 
-    }  */
 
 /* Blog Card */
 .blogCard{
@@ -279,30 +179,19 @@ nav{
     color: white;
 }
 
-/* new Navbar */
-/* *{
-    margin: 0;
-    padding: 0;
-    font-family: inter, sans-serif;
-} */
+/* Navbar */
 
 .navbar{
     display: flex;
-    margin-left: 80px;
+    position: sticky;
 }
 nav{
+    margin: auto;
     background-color: #0e2744;
     border: 2px solid #002766;
     width: 85%;
     height: 60px;
     border-radius: 50px;
-}
-
-label{
-    font-weight: bold;
-    font-size: 25px;
-    margin: auto;
-    margin-left: 40px;
 }
 
 ul{
@@ -318,6 +207,7 @@ li{
     padding: 5px 20px 5px 20px;
     font-weight: 500;
     color: white;
+    cursor: pointer;
 }
 li:hover{
     background-color: #041228;
@@ -340,5 +230,145 @@ li:hover{
     padding: 5px 20px 5px 20px;
     color: white;
 }
+#iconMenu{
+    display: none;
+}
+
+.LoginImage{
+    border: 3px solid #002766;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    
+    position: fixed;
+    top: 60px;
+    right: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+}
+.LoginImage img{
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+}
+
+@media (max-width:1100px) {
+    .LoginImage{
+        top: 70px;
+    }
+}
+@media (max-width:800px) {
+    nav{
+        width: 90%;
+    }
+    li{
+        font-size: 13px;
+        padding: 5px 15px 5px 15px;
+    }
+    li:hover{
+        padding: 5px 15px 5px 15px;
+    }
+    #ls{
+        padding: 5px 15px 5px 15px;
+    }
+    #ls:hover{
+        padding: 5px 15px 5px 15px;
+    }
+    .LoginImage{
+        top: 60px;
+        right: 20px;
+    }
+}
+@media (max-width: 500px) {
+    nav{
+        width: 100%;
+    }
+    ul{
+        display: none;
+    }
+    .LoginImage{
+        top: 110px;
+        right: 25px;
+    }
+    #iconMenu{
+        list-style: none;
+        display: flex;   
+        justify-content: space-around;
+        padding: 10px 0 10px 0;
+    }
+    
+    li{
+        border: 2px solid #0e2744;
+        border-radius: 20px;
+        padding: 7px 15px 7px 15px;
+        color: white;
+        cursor: pointer;
+        font-size: 11px;
+        text-align: center;
+    }
+    li:hover{
+        background-color: #041228;
+        border: 2px solid #002766;
+        padding: 7px 15px 7px 15px;
+        border-radius: 20px;
+        color: white;
+    }
+    #ls{
+        background-color: lightgray;
+        border: 1px solid gray;
+        border-radius: 20px;
+        padding: 5px;
+        color: black;
+    }
+    #ls:hover{
+        background-color: #041228;
+        border: 1px solid #002766;
+        border-radius: 20px;
+        padding: 5px;
+        color: white;
+    }
+}
+
+
+/* Material Resource Card */
+.materialCardBody{
+    border: 2px solid #002766;
+    background-color: #041228;
+    width:200px;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+}
+.materialCardBody p{
+    font-size: 13px;
+    color: gray;
+}
+.groupBtn{
+    display: flex;
+    justify-content: space-around;
+}
+.materialCardBody .groupBtn button{
+    background-color: greenyellow;
+    border: 1px solid green;
+    border-radius: 30px;
+    padding: 1px 0 5px 0;
+    width: 60px;
+}
+
+@media (max-width:800px){
+    .materialCardBody{
+        width:170px;
+    }
+}
+@media (max-width:600px){
+    .materialCardBody{
+        width:200px;
+    }
+}
+
 
 

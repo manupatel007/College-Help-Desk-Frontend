@@ -1,7 +1,7 @@
 import './App.css';
 import Card from "./Components/Card";
 import Footer from "./Components/Footer";
-import { BsAward } from 'react-icons/bs';
+import { BsTv } from 'react-icons/bs';
 import { BsLaptop } from 'react-icons/bs';
 import { BsCpu } from 'react-icons/bs';
 import { BsLightbulb } from 'react-icons/bs';
@@ -57,7 +57,7 @@ function LandingPage() {
         <div className="container">
           <div className="row">
             <div id="colCard" className="col-lg-4 col-md-4 col-sm-12">
-              <Card img={image1} symbol={<BsAward size={30}/>} department="Computer Science Department" depid="CS"/>
+              <Card img={image1} symbol={<BsTv size={30}/>} department="Computer Science Department" depid="CS"/>
             </div>
             <div id="colCard" className="col-lg-4 col-md-4 col-sm-12">
               <Card img={image2} symbol={<BsLaptop size={30}/>} department="Information Technology Department" depid="IT"/>

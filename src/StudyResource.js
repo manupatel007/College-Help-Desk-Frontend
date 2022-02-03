@@ -6,6 +6,7 @@ import ResourceCard from './Components/ResourceCard';
 
 import {useLocation} from 'react-router-dom';
 import Navbar from './Components/Navbar';
+import MaterialResourceCard from './Components/MaterialResourceCard';
 
 function Resource() {
     const location = useLocation();
@@ -53,7 +54,7 @@ function Resource() {
                 <div className="container">
                     <br/>
                     <div id="blogHeadDiv" style={{padding: '40px'}}>
-                        <Navbar/>
+                        {/* <Navbar/> */}
                         <div id="space"></div>
                         <div id="blogHeading" className="row">
                             <h1>{heading}</h1>
@@ -65,7 +66,7 @@ function Resource() {
             <section id="blogCardSec">
                 <div className ="container">
                     <div className='row'>
-                        <div className="col-lg-8 col-md-12 col-sm-12">
+                        <div className="col-lg-12 col-md-12 col-sm-12">
                             {
                                 resources.length>0 && resources.map((resource, i) => {
                                     return (
@@ -74,19 +75,31 @@ function Resource() {
                                 })
                             }
                         </div>
-                        <div className="col-lg-4 col-md-12 col-sm-12" style={{padding: '0 30px 0 30px'}}>
-                            <div id="space"></div>
-                            <div><h6 style={{fontWeight: '700', color: 'lightgray', fontSize: '15px'}}>No new Anouncements</h6></div>
-                            <div>
-                                <div className="row" style={{fontSize: '12px', color: 'lightgray', textAlign: 'center'}}>
-                                </div>
-                            </div>
+                    </div>
+                    <div className="row" style={{paddingTop:'40px'}}>
+                        <div id='studyResoCards' className="col-lg-3 col-md-3 col-sm-12">
+                            <MaterialResourceCard subject='DBMS' year='Year: 2021-22'/>                            
+                        </div>
+                        <div id='studyResoCards' className="col-lg-3 col-md-3 col-sm-12">
+                            <MaterialResourceCard subject='DSA' year='Year: 2020-21'/>
+                        </div>
+                        <div id='studyResoCards' className="col-lg-3 col-md-3 col-sm-12">
+                            <MaterialResourceCard subject='SE' year='Year: 2019-20'/>                            
+                        </div>
+                        <div id='studyResoCards' className="col-lg-3 col-md-3 col-sm-12">
+                            <MaterialResourceCard subject='DCCN' year='Year: 2021-22'/>
                         </div>
                     </div>
+                    <div className="row">
+                        <div id='studyResoCards' className="col-lg-3 col-md-3 col-sm-12">
+                            <MaterialResourceCard subject='IOT' year='Year: 2017-18'/>
+                        </div>
+                        <div id='studyResoCards' className="col-lg-3 col-md-3 col-sm-12">
+                            <MaterialResourceCard subject='AI' year='Year: 2020-21'/>                            
+                        </div>                        
+                    </div>
                 </div>
-            </section>           
-            
-            <div id="space"></div>
+            </section>          
             
             <section id="footer">
                 <Footer rel="#blogPageTop"/>

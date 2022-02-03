@@ -16,17 +16,17 @@ function ContactUsPage() {
         <section id="contactUsPageTop">
             <div className="container">
                 <br/>
-                <div id="contactUsHeadDiv" style={{padding: '20px 30px 20px 30px'}}>
+                <div id="contactUsHeadDiv" style={{padding: '20px 10px 20px 10px'}}>
                     <Navbar/>
                     <div id="space"></div>
 
-                    <div id="contactUsHeading" className="row">
+                    <div id="contactUsHeading" className="row" style={{padding: '0 30px 20px 30px'}}>
                         <h1>CONTACT US</h1>
                     </div>
                     
                     <div id="space"></div>
 
-                    <div className="row">
+                    <div className="row" style={{padding: '0 30px 0 20px'}}>
                         <div className="col-lg-5 col-md-5 col-sm-12">
                             <div className="row"><ContactUsIcons icon={<BsTelephone />} head1="Call Us" head2="+91 9412345678" /></div>
                             <div className="row"><ContactUsIcons icon={<BsEnvelopeOpen />} head1="Mail Us" head2="collegebook@gmail.com" /></div>
