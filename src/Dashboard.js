@@ -9,7 +9,6 @@ function Dashboard() {
         <section id="Dashboard">
             <div className="container">
                 <div id='dashHeading' className="row" style={{textAlign:'center', marginTop:'50px', marginBottom:'20px'}}>
-                    {/* <div className="dashIcon"><AiOutlineHome color='white' size={20}/></div> */}
                     <div className="dashHead"><h1>Dashboard</h1></div>
                 </div>
                 <div id='panel' className="row">

@@ -281,7 +281,7 @@ img{
     justify-content: center;
 }
 #errorCont img{
-    padding-top: 100px;
+    padding-top: 50px;
     width: 70%;
     height: auto;
     
@@ -299,5 +299,6 @@ img{
     font-weight: 600;
 }
 .errorBtn button:hover{
-    color:lightgray
+    color:lightgray;
+    border: 1px solid lightgray;
 }

@@ -10,6 +10,7 @@ import Resource from "./StudyResource";
 import SignUpLoginPage from "./SignUpLoginPage";
 import Dashboard from "./Dashboard";
 import Error404Page from "./Error404Page";
+import FAQAccordian from "./Components/FAQAccordian";
 
 
 
@@ -26,6 +27,7 @@ export default function App() {
       <Route path="/signup" element={<SignUpLoginPage/>} />
       <Route path="/dashboard" element={<Dashboard/>} />
       <Route path="/error" element={<Error404Page/>} />
+      <Route path="/faqCard" element={<FAQAccordian/>} />
     </Routes>
   );
 }
