@@ -28,7 +28,8 @@ const Info = {
     "3":"3rd Year",
     "4":"4th Year",
     "islogin":false,
-    "username":""
+    "username":"",
+    "email":""
 }
 
 export default Info

@@ -15,8 +15,21 @@ function Resource() {
     const resourceId = location.state.resourceId;
     const year = location.state.year;
     const heading = location.state.heading;
+    const valueee = JSON.parse(localStorage.getItem("login"));
 
     function getResource(){
+        if(valueee){
+            var headerObj = {
+                "Content-type": "application/json",
+                Authorization: "Bearer " + valueee.token
+            }
+        }
+        else{
+            var headerObj = {
+                "Content-type": "application/json"
+            }
+        }
+
         fetch("https://collegebackenc.herokuapp.com/chats/resource/", {
         method: "POST",
         body: JSON.stringify({
@@ -24,9 +37,7 @@ function Resource() {
             year: year,
             resourceId: resourceId
         }),
-        headers: {
-            "Content-type": "application/json"
-        }
+        headers: headerObj
         })
         .then((response) => {
             return response.json();
@@ -54,7 +65,7 @@ function Resource() {
                 <div className="container">
                     <br/>
                     <div id="blogHeadDiv" style={{padding: '40px'}}>
-                        {/* <Navbar/> */}
+                        <Navbar/>
                         <div id="space"></div>
                         <div id="blogHeading" className="row">
                             <h1>{heading}</h1>
@@ -70,34 +81,13 @@ function Resource() {
                             {
                                 resources.length>0 && resources.map((resource, i) => {
                                     return (
-                                        <ResourceCard blogheading={resource.name} blogimage blogdescription="Machine Learning is a subset of Artificial Intelligence (AI)." url={resource.url} subject={resource.subject} />
+                                        <ResourceCard blogheading={resource.name} blogimage blogdescription="Machine Learning is a subset of Artificial Intelligence (AI)." url={resource.url} subject={resource.subject} status={resource.user_liked} />
                                     )
                                 })
                             }
                         </div>
                     </div>
-                    <div className="row" style={{paddingTop:'40px'}}>
-                        <div id='studyResoCards' className="col-lg-3 col-md-3 col-sm-12">
-                            <MaterialResourceCard subject='DBMS' year='Year: 2021-22'/>                            
-                        </div>
-                        <div id='studyResoCards' className="col-lg-3 col-md-3 col-sm-12">
-                            <MaterialResourceCard subject='DSA' year='Year: 2020-21'/>
-                        </div>
-                        <div id='studyResoCards' className="col-lg-3 col-md-3 col-sm-12">
-                            <MaterialResourceCard subject='SE' year='Year: 2019-20'/>                            
-                        </div>
-                        <div id='studyResoCards' className="col-lg-3 col-md-3 col-sm-12">
-                            <MaterialResourceCard subject='DCCN' year='Year: 2021-22'/>
-                        </div>
-                    </div>
-                    <div className="row">
-                        <div id='studyResoCards' className="col-lg-3 col-md-3 col-sm-12">
-                            <MaterialResourceCard subject='IOT' year='Year: 2017-18'/>
-                        </div>
-                        <div id='studyResoCards' className="col-lg-3 col-md-3 col-sm-12">
-                            <MaterialResourceCard subject='AI' year='Year: 2020-21'/>                            
-                        </div>                        
-                    </div>
+                    
                 </div>
             </section>          
             

@@ -5,6 +5,7 @@ import AboutPage from "./AboutPage";
 import ContactUsPage from "./ContactUsPage";
 import Navbar from "./Components/Navbar";
 import Blog from "./Blog";
+import Blog1 from "./Blog1";
 import DepartmentPage from "./DepartmentPage";
 import Resource from "./StudyResource";
 import SignUpLoginPage from "./SignUpLoginPage";
@@ -20,6 +21,7 @@ export default function App() {
       <Route exact path="/" element={<LandingPage/>} />
       <Route path="/aboutus" element={<AboutPage/>} />
       <Route path="/contactus" element={<ContactUsPage/>} />
+      <Route path="/blog1" element={<Blog1/>} />
       <Route path="/nav" element={<Navbar/>} />
       <Route path="/blog" element={<Blog/>} />
       <Route path="/Dep" element={<DepartmentPage/>} />

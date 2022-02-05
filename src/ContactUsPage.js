@@ -38,7 +38,7 @@ function ContactUsPage() {
                                     <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Name" />
                                 </div>
                                 <div className="col-lg-6 col-md-6 col-sm-12">
-                                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email ID" />
+                                    <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="Email ID" />
                                 </div>
                             </div>
                             <br/>

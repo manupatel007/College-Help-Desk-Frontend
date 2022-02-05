@@ -20,8 +20,7 @@ function Blog() {
 
                         <br/>
                         <div id="blogheadDiv2" className="row" style={{padding: '0 40px 30px 40px'}}>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ratione vitae nulla facere ex culpa deserunt accusamus dolor facilis quo! Modi laborum incidunt corporis adipisci nostrum aut sapiente magnam magni facere, sed voluptatem a vitae minus temporibus facilis. Numquam, dolorum excepturi! Dolor, eius vero! Praesentium pariatur expedita culpa accusamus, aliquam cumque atque natus repellendus delectus provident repellat ratione rerum nam. Culpa qui ut laboriosam?</p>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos, praesentium sit adipisci blanditiis, ab repellendus quibusdam voluptates odit aut maiores a cum deserunt assumenda ipsam ullam quas quis vitae tenetur, quam qui. Repellat, dignissimos? Ducimus dolores natus sed architecto rem obcaecati vel beatae laboriosam. Itaque officia porro voluptatibus distinctio sit quod! Repellat, nesciunt omnis quisquam dolores nam cupiditate qui enim? Optio, a sit! Doloribus!</p>
+                            <p></p>
                         </div>
                         <br/>
                         <div id="getStartBtn">

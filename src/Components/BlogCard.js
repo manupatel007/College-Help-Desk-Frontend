@@ -1,9 +1,12 @@
 import React from 'react'
 import "./ComponentStyle.css";
+import {Link, useNavigate} from 'react-router-dom';
 
 function BlogCard(props) {
-    const navigate = () => {
-        window.location.href= props.url;
+
+    const navigate = useNavigate();
+    const navigate2 = () => {
+        navigate('/Blog1');
     }
     return (
         <>
@@ -16,7 +19,7 @@ function BlogCard(props) {
                             <div className="col-lg-7 col-md-7 col-sm-7">{props.blogimage}</div>
                             <div id="blogContent" className="col-lg-5 col-md-5 col-sm-5">
                                 <p>{props.blogdescription}</p>
-                                <button type="button" id="readBtn" class="btn btn-light" onClick={() => navigate()}>READ MORE ...</button>
+                                <button type="button" id="readBtn" class="btn btn-light" onClick={() => navigate2()}>READ MORE ...</button>
                             </div>
                         </div>
                     </div> 
