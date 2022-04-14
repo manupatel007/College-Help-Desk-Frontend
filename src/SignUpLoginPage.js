@@ -86,7 +86,8 @@ function SignUpLoginPage() {
 			"login",
 			JSON.stringify({
 				login: true,
-				token: json.access
+				token: json.access,
+				username:e.target.name.value
 			})
 			);
 			Info.islogin = true;

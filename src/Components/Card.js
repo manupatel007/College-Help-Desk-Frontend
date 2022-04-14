@@ -19,7 +19,7 @@ function Card(props) {
                 </div> 
                 
                 <div className="second">
-                    <h6>{props.department+'1'}</h6>
+                    <h6>{props.department}</h6>
                     <br/>
                     <div id="btn">
                         <button type="button" id={props.depid} onClick={(e)=>{toDept(e,2)}} className="btn btn-outline-light" style={{height: "35px", marginRight:"4px", borderRadius: "30px"}}>II Year</button>

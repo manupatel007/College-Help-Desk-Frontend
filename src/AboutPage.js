@@ -3,7 +3,7 @@ import Footer from "./Components/Footer";
 import AboutUsCard from "./Components/AboutUsCard";
 import image1 from './photo/Ankit-pic.jpeg';
 import image2 from './photo/Anshul-pic.jpg';
-import image3 from './photo/Sudhanshu-pic.JPG';
+import image3 from './photo/Sudhanshu-pic.jpg';
 import image4 from './photo/Tarun-pic.jpg';
 import image5 from './photo/Vishwas-pic.jpg';
 import Navbar from './Components/Navbar';
@@ -24,7 +24,7 @@ function AboutPage() {
                     <br/>
                     <div id="aboutheadDiv2" className="row" style={{padding: '0 40px 40px 40px'}}>
                         <h3>About Website</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt tenetur illum quisquam commodi, ipsum sint, reprehenderit velit provident, eos voluptatibus optio sapiente? Iure id rerum nam asperiores voluptates delectus corporis perspiciatis quia?</p>
+                        <p>We are here to provide you latest study material for you Engineering course.</p>
                         <div id="space"></div>
                         <h3>About Our Team</h3>
                         <p>Our team consist of Computer Science Engineering students, each of them have good development skills in web development field. This team is divide into two parts Frontend and Backend.</p>
