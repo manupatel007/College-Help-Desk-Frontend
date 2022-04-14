@@ -16,6 +16,7 @@ import image4 from './photo/EEDI.jpg';
 import image5 from './photo/CDI.jpg';
 import image6 from './photo/MDI.jpg';
 
+import IconSlider from './Components/IconSlider';
 import Navbar from './Components/Navbar';
 
 function LandingPage() {
@@ -80,10 +81,10 @@ function LandingPage() {
         </div>
       </section>
 
-      <div id="space"></div>
+      <IconSlider />
 
       <section id="footer">
-        <Footer rel="#LandingPageTop"/>
+        <Footer rel="#LandingPageTop"/>     
       </section>
 
     </>

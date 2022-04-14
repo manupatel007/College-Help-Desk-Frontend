@@ -46,6 +46,9 @@ img{
     font-weight: 700;
 }
 
+#CardGroup{
+    margin-bottom: 30px;
+}
 /* Card */
 #colCard{
     display: flex;
@@ -282,23 +285,12 @@ img{
 }
 #errorCont img{
     padding-top: 50px;
-    width: 70%;
+    width: 60%;
     height: auto;
     
 }
 .errorBtn{
-    padding: 100px;
+    padding: 70px;
     display: flex;
     justify-content: center;
-}
-.errorBtn button{
-    border: 1px solid #041228;
-    background-color: #0E2744;
-    padding: 15px 30px;
-    border-radius: 10px;
-    font-weight: 600;
-}
-.errorBtn button:hover{
-    color:lightgray;
-    border: 1px solid lightgray;
 }

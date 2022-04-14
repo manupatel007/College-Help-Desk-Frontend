@@ -406,3 +406,41 @@ li:hover{
     border-radius: 0 0 8px 8px;
     font-size: 15px;
 }
+
+
+/* Icon Slider */
+.slider{
+    height: 70px;
+    margin: auto;
+    position: relative;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+.slideTrack{
+    display: flex;
+    width: calc(104px* 26);
+    animation: scroll 50s linear infinite;
+}
+@keyframes scroll {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-104px*13));
+    }
+}
+.slide{
+    color: #041228;
+    width: 104px;
+    display: flex;
+    align-items: center;
+    padding: 5px 35px 5px 35px;
+    font-size: 35px;
+    opacity: 0.65;
+}
+#middle{
+    padding-left: 50px;
+    
+}

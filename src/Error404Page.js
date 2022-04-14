@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import { Link } from 'react-router-dom'
 
 function Error404Page() {
   return (
@@ -8,7 +9,7 @@ function Error404Page() {
             <img src='./ErrorImg.png' alt='error' />    
         </div>
         <div className="errorBtn">
-            <button type='button'>Go to Home</button>
+            <Link to='/'>Go to Home</Link>
         </div>
     </>
   );

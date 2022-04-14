@@ -7,7 +7,7 @@ function ResourceCard(props) {
     }
     return (
         <>
-        <br/><br/>
+        
             <div className="container">
                 <div className = "row">
                     <div className="blogCard">
