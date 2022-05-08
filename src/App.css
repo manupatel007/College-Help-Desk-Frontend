@@ -8,7 +8,6 @@
     height: 600px;
     background-color: #041228;
     border: 2px solid #002766;
-    margin: 1px;
 }
 
 #headDiv1{
@@ -49,6 +48,7 @@ img{
 #CardGroup{
     margin-bottom: 30px;
 }
+
 /* Card */
 #colCard{
     display: flex;
@@ -86,7 +86,6 @@ img{
     border-radius: 15px ;
     background-color: #041228;
     border: 2px solid #002766;
-    margin: 1px;
 }
 #aboutheadDiv1 h1{
     letter-spacing: 2px;
@@ -113,7 +112,6 @@ img{
     border-radius: 15px ;
     background-color: #041228;
     border: 2px solid #002766;
-    margin: 1px;
 }
 #contactUsHeading{
     text-align: center;
@@ -141,7 +139,6 @@ img{
     border-radius: 15px ;
     background-color: #041228;
     border: 2px solid #002766;
-    margin: 1px;
 }
 #blogHeading{
     text-align: center;
@@ -157,7 +154,6 @@ img{
     background-color: #041228;
     border: 2px solid #002766;
     padding: 20px 30px 30px 30px;
-    margin: 1px;
 }
 
 #departmentHeadDiv h1{
@@ -293,4 +289,72 @@ img{
     padding: 70px;
     display: flex;
     justify-content: center;
+}
+
+
+/* Discussion Forum Page */
+.DiscussionForumHead{
+    border-radius: 15px;
+    background-color: #041228;
+    border: 2px solid #002766;
+    margin-top: 25px;
+    padding-top: 20px;
+}
+
+.DiscussionForumHead h1{
+    text-align: center;
+    margin: 30px 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.DiscussionForumHead p{
+    padding: 30px 50px;
+    color: lightblue;
+}
+
+.AskDiscussionQuestion{
+    display: flex;
+    margin: 20px 10px;
+    justify-content: space-between;
+    align-items: center;
+    color: lightgray;
+}
+
+.AskDiscussionQuestion p{
+    border: 1px solid #002766;
+    background-color: rgb(192, 192, 192);
+    color: #000;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+
+/* Discussion forum Question and Answer */
+#queAns{
+    margin-top: 30px;
+    color: #fff;
+}
+
+.queAnsQuestion{
+    margin: 20px 0;
+}
+
+.contentFunctionality{
+    display: flex;
+    min-height: 130px;
+}
+
+.queAnsFunctionality{
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 7px;
+}
+
+.queAnsContent p{
+    font-size: 15px;
+    color: lightgray;
 }
