@@ -1,6 +1,6 @@
-import React from "react";
-import FroalaEditor from "froala-editor";
-import "froala-editor/js/plugins/align.min.js";
+import React, { useState } from "react";
+import { CKEditor } from "@ckeditor/ckeditor5-react";
+import ClassicEditor from "@ckeditor/ckeditor5-build-classic";
 import { Link } from "react-router-dom";
 import {
   BsHandThumbsUp,
@@ -12,6 +12,8 @@ import Footer from "./Components/Footer";
 import DiscussionForumAnswer from "./Components/DiscussionForumAnswer";
 
 function DiscussionForumQueAnsPage() {
+  const [text, setText] = useState("");
+
   return (
     <>
       <div className="container">
@@ -65,7 +67,19 @@ function DiscussionForumQueAnsPage() {
           <hr style={{ color: "lightgray" }} />
         </section>
 
-        <section id="ansForm">{new FroalaEditor("#edit")}</section>
+        <section id="ansForm">
+          <h5 style={{ color: "lightblue", marginBottom: "20px" }}>
+            Write your answer
+          </h5>
+          <CKEditor
+            editor={ClassicEditor}
+            data={text}
+            onChange={(event, editor) => {
+              const data = editor.getData();
+              setText(data);
+            }}
+          />
+        </section>
       </div>
 
       <section id="footer">

@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import DiscussionForumQuestion from "./Components/DiscussionForumQuestion";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 import { Link } from "react-router-dom";
 
 function DiscussionForum() {
+  useEffect(() => {
+    document.title = "Discussion Forum";
+  }, []);
+
   return (
     <>
       <div className="container">

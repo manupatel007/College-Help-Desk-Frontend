@@ -1,4 +1,5 @@
 import "./App.css";
+import { useEffect } from "react";
 import Footer from "./Components/Footer";
 import AboutUsCard from "./Components/AboutUsCard";
 import image1 from "./photo/Ankit-pic.jpeg";
@@ -9,6 +10,10 @@ import image5 from "./photo/Vishwas-pic.jpg";
 import Navbar from "./Components/Navbar";
 
 function AboutPage() {
+  useEffect(() => {
+    document.title = "About Us";
+  }, []);
+
   return (
     <>
       <section id="aboutUsPageTop">
