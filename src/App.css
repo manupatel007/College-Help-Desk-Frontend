@@ -139,13 +139,35 @@ img{
     border-radius: 15px ;
     background-color: #041228;
     border: 2px solid #002766;
+    padding: 20px 10px 30px 10px;
 }
 #blogHeading{
     text-align: center;
     letter-spacing: 3px;
+    padding: 0 10px 10px 10px;
 }
 #blogheadDiv2 p{
-    color:white
+    color:white;
+    padding: 0 40px 30px 40px;
+}
+
+/* Blog Post page */
+#blogPostHeadDiv{
+    border-radius: 15px ;
+    background-color: #041228;
+    border: 2px solid #002766;
+    padding: 20px 10px 30px 10px;
+}
+#blogPostHeading h2{
+    color: #fff;
+    padding: 20px 10px 10px 30px;
+}
+#blogPostheadDiv2 p{
+    color: #fff;
+    padding: 0 40px 30px 40px;
+}
+#blogPostBody p{
+    font-size: 15px;
 }
 
 /* Department Page */

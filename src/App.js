@@ -4,7 +4,7 @@ import LandingPage from "./LandingPage";
 import AboutPage from "./AboutPage";
 import ContactUsPage from "./ContactUsPage";
 import Blog from "./Blog";
-import Blog1 from "./BlogPost";
+import BlogPost from "./BlogPost";
 import DepartmentPage from "./DepartmentPage";
 import Resource from "./StudyResource";
 import SignUpLoginPage from "./SignUpLoginPage";

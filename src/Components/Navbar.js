@@ -7,10 +7,17 @@ import { AiOutlineTeam } from "react-icons/ai";
 import { AiOutlinePicRight } from "react-icons/ai";
 import { AiOutlineComment } from "react-icons/ai";
 import { AiOutlineCustomerService } from "react-icons/ai";
-import { AiOutlineLogin } from "react-icons/ai";
 
 function Navbar() {
   const navigate = useNavigate();
+
+  const showOptionBox = () => {
+    if (document.getElementById("optionsBox").style.display === "none") {
+      document.getElementById("optionsBox").style.display = "block";
+    } else {
+      document.getElementById("optionsBox").style.display = "none";
+    }
+  };
 
   return (
     <>
@@ -49,8 +56,15 @@ function Navbar() {
           </ul>
         </nav>
       </div>
-      <div className="LoginImage" onClick={() => navigate("/dashboard")}>
-        <img src="./avatar.png" alt="Profile Image" />
+
+      <div className="LoginImage" onClick={showOptionBox}>
+        <img src="./avatar.png" id="loginImage" alt="ProfileImage" />
+
+        <div className="optionBox" id="optionsBox">
+          <Link to="/">Dashboard</Link>
+          <hr style={{ margin: "4px 0 3px 0" }} />
+          <Link to="/discuss">Discussion Forum</Link>
+        </div>
       </div>
     </>
   );

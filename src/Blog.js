@@ -14,25 +14,22 @@ function Blog() {
       <section id="blogPageTop">
         <div className="container">
           <br />
-          <div id="blogHeadDiv" style={{ padding: "20px 10px 30px 10px" }}>
+          <div id="blogHeadDiv">
             <Navbar />
             <div id="space"></div>
 
-            <div
-              id="blogHeading"
-              className="row"
-              style={{ padding: "0 10px 30px 10px" }}
-            >
+            <div id="blogHeading" className="row">
               <h1>BLOG</h1>
             </div>
 
             <br />
-            <div
-              id="blogheadDiv2"
-              className="row"
-              style={{ padding: "0 40px 30px 40px" }}
-            >
-              <p></p>
+            <div id="blogheadDiv2" className="row">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+                quam accusamus atque, necessitatibus sint, tenetur perferendis
+                maiores error illum, voluptates repellendus natus iure
+                voluptatibus dolore dignissimos sed ullam in vel earum eum?
+              </p>
             </div>
             <br />
             <div id="getStartBtn">
