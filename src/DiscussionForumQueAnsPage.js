@@ -12,7 +12,7 @@ import Footer from "./Components/Footer";
 import DiscussionForumAnswer from "./Components/DiscussionForumAnswer";
 
 function DiscussionForumQueAnsPage() {
-  const [text, setText] = useState("");
+  const [queText, setQueText] = useState("");
 
   return (
     <>
@@ -73,12 +73,13 @@ function DiscussionForumQueAnsPage() {
           </h5>
           <CKEditor
             editor={ClassicEditor}
-            data={text}
+            data={queText}
             onChange={(event, editor) => {
               const data = editor.getData();
-              setText(data);
+              setQueText(data);
             }}
           />
+          <button id="submitAnsBtn">Post Answer</button>
         </section>
       </div>
 

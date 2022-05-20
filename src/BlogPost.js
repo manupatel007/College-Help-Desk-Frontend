@@ -12,7 +12,7 @@ function blogPost() {
         <div className="container">
           <br />
           <div id="blogPostHeadDiv">
-            <div style={{ paddingLeft: "20px" }}>
+            <div>
               <Link to="/blog">
                 <BsArrowLeftCircle size={25} />
               </Link>
@@ -23,7 +23,11 @@ function blogPost() {
             </div>
 
             <br />
-            <div id="blogPostheadDiv2" className="row"></div>
+            <div id="blogPostheadDiv2" className="row">
+              <p>
+                <strong>Contributed by : </strong>Sudhanshu Gupta
+              </p>
+            </div>
           </div>
         </div>
       </section>

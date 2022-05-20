@@ -1,13 +1,17 @@
 import "./App.css";
 import { useEffect } from "react";
 import Card from "./Components/Card";
+import IconSlider from "./Components/IconSlider";
 import Footer from "./Components/Footer";
-import { BsTv } from "react-icons/bs";
-import { BsLaptop } from "react-icons/bs";
-import { BsCpu } from "react-icons/bs";
-import { BsLightbulb } from "react-icons/bs";
-import { BsBuilding } from "react-icons/bs";
-import { BsTools } from "react-icons/bs";
+import Navbar from "./Components/Navbar";
+import {
+  BsTv,
+  BsTools,
+  BsLaptop,
+  BsCpu,
+  BsLightbulb,
+  BsBuilding,
+} from "react-icons/bs";
 
 import image from "./photo/BG.png";
 import image1 from "./photo/FYDI.jpg";
@@ -16,9 +20,6 @@ import image3 from "./photo/ECDI.jpg";
 import image4 from "./photo/EEDI.jpg";
 import image5 from "./photo/CDI.jpg";
 import image6 from "./photo/MDI.jpg";
-
-import IconSlider from "./Components/IconSlider";
-import Navbar from "./Components/Navbar";
 
 function LandingPage() {
   useEffect(() => {

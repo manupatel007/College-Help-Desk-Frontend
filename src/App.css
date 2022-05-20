@@ -2,10 +2,10 @@
     color: white;
 }
 
-/* headDiv */
+/* Landing Page */
 #headDiv{                       /*This is shared between 1st Div of landing and about us page*/
     border-radius: 15px ;
-    height: 600px;
+    height: 580px;
     background-color: #041228;
     border: 2px solid #002766;
 }
@@ -156,18 +156,20 @@ img{
     border-radius: 15px ;
     background-color: #041228;
     border: 2px solid #002766;
-    padding: 20px 10px 30px 10px;
+    padding: 20px 150px 30px 150px;
 }
 #blogPostHeading h2{
     color: #fff;
-    padding: 20px 10px 10px 30px;
+    padding: 20px 0 10px 10px;
 }
 #blogPostheadDiv2 p{
-    color: #fff;
-    padding: 0 40px 30px 40px;
+    color: gray;
+    font-size: 13px;
+    text-align: end;
 }
 #blogPostBody p{
     font-size: 15px;
+    margin: 0 150px;
 }
 
 /* Department Page */
@@ -343,7 +345,7 @@ img{
     color: lightgray;
 }
 
-.AskDiscussionQuestion p{
+.AskDiscussionQuestion #queBtn, #queCloseBtn, #submitAnsBtn, #submitQueBtn{
     border: 1px solid #002766;
     background-color: rgb(192, 192, 192);
     color: #000;
@@ -352,6 +354,50 @@ img{
     border-radius: 10px;
     margin-top: 10px;
 }
+
+#light {
+  display: none;
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  width: 50%;
+  height: 50%;
+  padding: 10px 20px;
+  border: 3px solid #002766;
+  border-radius: 10px;
+  color: #000;
+  background-color: #041228;
+  z-index: 1002;
+  overflow: auto;
+}
+
+#light button{
+    position: absolute;
+    right: 20px;
+}
+
+#light h6{
+    margin: 30px 0;
+    color: lightgray;
+}
+
+#light .CKEditor{
+    background-color: #002766;
+}
+
+#fade {
+    display: none;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    z-index: 1001;
+    -moz-opacity: 0.8;
+    opacity: .80;
+    filter: alpha(opacity=80);
+  }
 
 
 /* Discussion forum Question and Answer */
