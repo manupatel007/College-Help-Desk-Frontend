@@ -42,7 +42,7 @@ img{
 }
 #headContent p{
     font-size: 15px;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 #CardGroup{
@@ -376,13 +376,18 @@ img{
     right: 20px;
 }
 
-#light h6{
+#light h5{
     margin: 30px 0;
     color: lightgray;
 }
 
-#light .CKEditor{
-    background-color: #002766;
+#queTitle, #queDescription{
+    width: 100%;
+    color: lightgray;
+    background-color: #041228;
+    border: 1px solid #041228;
+    border-bottom: 2px solid #002766;
+    margin-bottom: 20px;
 }
 
 #fade {

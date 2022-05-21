@@ -26,7 +26,10 @@ function DiscussionForumQueAnsPage() {
 
           <div className="detailedQuestion">
             <div className="queAnsQuestion">
-              <h2>Java linked list is not found</h2>
+              <h2>
+                Is there anyone that can help me with Balanced Brackets in
+                Python using Stack?
+              </h2>
             </div>
             <div className="contentFunctionality">
               <div className="queAnsFunctionality">
@@ -36,20 +39,16 @@ function DiscussionForumQueAnsPage() {
               </div>
               <div className="queAnsContent">
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Eligendi natus consectetur veritatis est laudantium alias qui
-                  quo, odit cumque asperiores tempore aperiam laborum neque
-                  repudiandae facere consequuntur nemo. Animi harum, corporis
-                  veritatis aliquid molestias nisi illum vero et culpa
-                  laboriosam officia dicta amet aut expedita tempore. Temporibus
-                  saepe vero labore similique eligendi fugiat nihil rem magnam
-                  architecto sequi? Recusandae, earum? Lorem ipsum dolor sit
-                  amet consectetur adipisicing elit. Eligendi natus consectetur
-                  veritatis est laudantium alias qui quo, odit cumque asperiores
-                  tempore aperiam laborum neque repudiandae facere consequuntur
-                  nemo. Animi harum, corporis veritatis aliquid molestias nisi
-                  illum vero et culpa laboriosam officia dicta amet aut expedita
-                  tempore.
+                  Modify the chkBracketsBal function so that the caller can
+                  supply the brackets to match as arguments to this function.
+                  The second argument should be a list of beginning brackets,
+                  and the third argument should be a list of ending brackets.
+                  The pairs of brackets at each position in the two lists; that
+                  is, position 0 in the two lists might have [ and ],
+                  respectively. You should be able to modify the code for the
+                  function so that it does not reference any literal bracket
+                  symbols, but just uses the list arguments. (Hint: The
+                  method index returns the position of an item in a list.) 
                 </p>
               </div>
             </div>

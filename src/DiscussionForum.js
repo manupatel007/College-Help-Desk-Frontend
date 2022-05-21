@@ -57,17 +57,18 @@ function DiscussionForum() {
             <button id="queCloseBtn" onClick={hide}>
               X
             </button>
-            <h6>Write your question</h6>
+            <h5>Write your question</h5>
 
-            <CKEditor
-              editor={ClassicEditor}
-              data={text}
-              onChange={(event, editor) => {
-                const data = editor.getData();
-                setText(data);
-              }}
+            <input id="queTitle" type="text" placeholder="Question title" />
+            <br />
+            <br />
+            <input
+              id="queDescription"
+              type="text"
+              placeholder="Question description"
             />
-
+            <br />
+            <br />
             <button id="submitQueBtn">Post Question</button>
           </div>
           <div id="fade" className="blackOverlay"></div>

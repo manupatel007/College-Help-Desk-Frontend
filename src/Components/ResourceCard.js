@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./ComponentStyle.css";
+import { BsDownload, BsStar, BsStarFill } from "react-icons/bs";
 
 function ResourceCard(props) {
   const navigate = () => {
@@ -54,11 +55,11 @@ function ResourceCard(props) {
                     class="btn btn-light"
                     onClick={() => makeFavourite()}
                   >
-                    Save
+                    <BsStar size={15} />
                   </button>
                 ) : (
                   <button type="button" id="readBtn" class="btn btn-light">
-                    Saved..
+                    <BsStarFill />
                   </button>
                 )}
               </div>
@@ -71,7 +72,7 @@ function ResourceCard(props) {
                   class="btn btn-light"
                   onClick={() => navigate()}
                 >
-                  Download
+                  <BsDownload />
                 </button>
               </div>
             </div>

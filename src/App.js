@@ -13,6 +13,7 @@ import Error404Page from "./Error404Page";
 import FAQAccordian from "./Components/FAQAccordian";
 import DiscussionForum from "./DiscussionForum";
 import DiscussionForumQueAnsPage from "./DiscussionForumQueAnsPage";
+import ResourceCard from "./Components/ResourceCard";
 
 export default function App() {
   return (
@@ -30,6 +31,7 @@ export default function App() {
       <Route path="/discuss" element={<DiscussionForum />} />
       <Route path="/queans" element={<DiscussionForumQueAnsPage />} />
       <Route path="/Blog1" element={<BlogPost />} />
+      <Route path="/res" element={<ResourceCard />} />
     </Routes>
   );
 }
