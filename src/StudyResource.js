@@ -67,7 +67,7 @@ function Resource() {
       <section id="blogPageTop">
         <div className="container">
           <br />
-          <div id="blogHeadDiv" style={{ padding: "40px" }}>
+          <div id="blogHeadDiv" style={{ padding: "20px 10px" }}>
             <Navbar />
             <div id="space"></div>
             <div id="blogHeading" className="row">

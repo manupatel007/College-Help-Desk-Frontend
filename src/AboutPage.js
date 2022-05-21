@@ -19,7 +19,7 @@ function AboutPage() {
       <section id="aboutUsPageTop">
         <div className="container">
           <br />
-          <div id="aboutUsHeadDiv" style={{ padding: "20px 10px 40px 10px" }}>
+          <div id="aboutUsHeadDiv">
             <Navbar />
             <div id="space"></div>
             <div

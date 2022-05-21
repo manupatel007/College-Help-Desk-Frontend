@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./App.css";
 import Footer from "./Components/Footer";
-import image1 from "./photo/BG.png";
 import { BsArrowLeftCircle } from "react-icons/bs";
 
 function blogPost() {

@@ -2,8 +2,13 @@
     color: white;
 }
 
+/*Space Div*/
+#space{
+    height: 50px;
+}
+
 /* Landing Page */
-#headDiv{                       /*This is shared between 1st Div of landing and about us page*/
+#headDiv{                       
     border-radius: 15px ;
     height: 580px;
     background-color: #041228;
@@ -36,7 +41,7 @@ img{
     font-weight: 700;
 }
 #headContent h2{
-    font-size: 35px;
+    font-size: 34px;
     letter-spacing: 10px;
     font-weight: 600;
 }
@@ -49,18 +54,11 @@ img{
     margin-bottom: 30px;
 }
 
-/* Card */
 #colCard{
     display: flex;
     justify-content: center;
 }
 
-/*Space*/
-#space{
-    height: 50px;
-}
-
-/* Get Started Button */
 #getStartBtn{
     color: white;
     font-weight: lighter;
@@ -81,16 +79,37 @@ img{
     border-radius: 30px;
 }
 
+@media (max-width:430px) {
+    #headDiv{
+        height: 660px;
+        padding: 10px 0;
+    }       
+    #headContent h1{
+        font-size: 40px;
+        
+    }
+    #headContent h2{
+        font-size: 24px;
+        
+    }
+    #headContent p{
+        font-size: 12px;
+        font-weight: 500;
+    }
+}   
+
 /* About Us Page */
+
 #aboutUsHeadDiv{
+    margin: 0 -12px;
     border-radius: 15px ;
     background-color: #041228;
     border: 2px solid #002766;
+    padding: 20px 10px 40px 10px;
 }
 #aboutheadDiv1 h1{
     letter-spacing: 2px;
     text-align: center;
-    font-size: 45px;
     font-weight: 500;
 }
 #aboutheadDiv2 h3{
@@ -109,6 +128,7 @@ img{
 
 /* Contact Us page */
 #contactUsHeadDiv{
+    margin: 0 -12px;
     border-radius: 15px ;
     background-color: #041228;
     border: 2px solid #002766;
@@ -123,6 +143,7 @@ img{
     background-color:#0E2744;
     color:white ;
     border: 2px solid gray;
+    margin-bottom: 5px;
 }
 
 #contactBtn{
@@ -136,6 +157,7 @@ img{
 
 /* Blog page */
 #blogHeadDiv{
+    margin: 0 -12px;
     border-radius: 15px ;
     background-color: #041228;
     border: 2px solid #002766;
@@ -172,12 +194,30 @@ img{
     margin: 0 150px;
 }
 
+@media (max-width:800px) {
+    #blogPostHeadDiv{
+        padding: 20px 80px 30px 80px;
+    }
+    #blogPostBody p{
+        margin: 0 80px;
+    }
+}
+
+@media (max-width:430px) {
+    #blogPostHeadDiv{
+        padding: 20px;
+    }
+    #blogPostBody p{
+        margin: 0 20px;
+    }
+}
+
 /* Department Page */
 #departmentHeadDiv{
     border-radius: 15px ;
     background-color: #041228;
     border: 2px solid #002766;
-    padding: 20px 30px 30px 30px;
+    padding: 30px 0;
 }
 
 #departmentHeadDiv h1{
@@ -186,6 +226,7 @@ img{
 
 #departmentHeadDiv p{
     color: lightblue;
+    padding: 0 20px;
 }
 
 
@@ -193,7 +234,7 @@ img{
 #studyResoCards{
     display: flex;
     justify-content: center;
-    padding: 20px 0 20px 0;
+    padding: 20px 0;
 }
 
 
@@ -318,11 +359,12 @@ img{
 
 /* Discussion Forum Page */
 .DiscussionForumHead{
+    margin: 0 -12px;
     border-radius: 15px;
     background-color: #041228;
     border: 2px solid #002766;
     margin-top: 25px;
-    padding-top: 20px;
+    padding: 20px 10px;
 }
 
 .DiscussionForumHead h1{
@@ -402,6 +444,27 @@ img{
     -moz-opacity: 0.8;
     opacity: .80;
     filter: alpha(opacity=80);
+  }
+
+  @media (max-width: 800px) {
+      #light{
+        top: 20%;
+        left: 15%;
+        width: 70%;
+        height: 60%;
+      }
+  }
+
+  @media (max-width: 430px) {
+    .DiscussionForumHead p{
+        padding: 20px;
+    }
+    #light{
+        top: 20%;
+        left: 5%;
+        width: 90%;
+        height: 60%;
+      }
   }
 
 

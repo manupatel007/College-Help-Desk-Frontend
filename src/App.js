@@ -13,7 +13,6 @@ import Error404Page from "./Error404Page";
 import FAQAccordian from "./Components/FAQAccordian";
 import DiscussionForum from "./DiscussionForum";
 import DiscussionForumQueAnsPage from "./DiscussionForumQueAnsPage";
-import ResourceCard from "./Components/ResourceCard";
 
 export default function App() {
   return (
@@ -22,6 +21,7 @@ export default function App() {
       <Route path="/aboutus" element={<AboutPage />} />
       <Route path="/contactus" element={<ContactUsPage />} />
       <Route path="/blog" element={<Blog />} />
+      <Route path="/Blog1" element={<BlogPost />} />
       <Route path="/faq" element={<FAQAccordian />} />
       <Route path="/signup" element={<SignUpLoginPage />} />
       <Route path="/dashboard" element={<Dashboard />} />
@@ -30,8 +30,6 @@ export default function App() {
       <Route path="/undefined" element={<Error404Page />} />
       <Route path="/discuss" element={<DiscussionForum />} />
       <Route path="/queans" element={<DiscussionForumQueAnsPage />} />
-      <Route path="/Blog1" element={<BlogPost />} />
-      <Route path="/res" element={<ResourceCard />} />
     </Routes>
   );
 }

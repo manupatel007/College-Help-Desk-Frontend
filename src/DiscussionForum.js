@@ -26,7 +26,7 @@ function DiscussionForum() {
   return (
     <>
       <div className="container">
-        <div className="DiscussionForumHead">
+        <div id="disHead" className="DiscussionForumHead">
           <Navbar />
 
           <h1>Discussion Forum</h1>
@@ -51,7 +51,7 @@ function DiscussionForum() {
           <h2 id="DiscussionForumH2">Questions</h2>
 
           <button id="queBtn" onClick={show}>
-            Ask a Question
+            <a href="#disHead"> Ask a Question</a>
           </button>
           <div id="light" className="whiteContent">
             <button id="queCloseBtn" onClick={hide}>
