@@ -8,6 +8,64 @@ import "./App.css";
 
 function DiscussionForum() {
   const [text, setText] = useState("");
+  const [questions, setQuestions] = useState([]);
+  const valueee = JSON.parse(localStorage.getItem("login"));
+
+  const getQuestions = () => {
+    fetch('https://collegebackenc.herokuapp.com/chats/allquestions/')
+    .then((response) => {
+      return response.json();
+    })
+    .then((json) => {
+      console.log(json);
+      setQuestions([...json]);
+    })
+    .catch((error) => console.log(error));
+  }
+
+  useEffect(()=>{
+    getQuestions();
+  }, [])
+
+  const postQuestion = () => {
+    if(valueee){
+      var headerObj = {
+        "Content-type": "application/json",
+        Authorization: "Bearer " + valueee.token,
+      };
+
+      fetch('https://collegebackenc.herokuapp.com/chats/addquestion/',{
+        method: "POST",
+        body: JSON.stringify({
+          author: 1,
+          title: document.getElementById('queTitle').value,
+          description: document.getElementById('queDescription').value,
+          subjectTag:"general"
+        }),
+        headers:headerObj
+      })
+      .then((response) => {
+        return response.json();
+      })
+
+      // Displaying results to console
+      .then((json) => {
+        console.log(json);
+        // console.log(resources);
+      })
+      .then(() =>
+        {window.location.reload();}
+      )
+      // .then(() => {
+      //     console.log(resources);
+      // })
+      .catch((error) => console.log(error));
+    }
+    else{
+      alert("You need to login for posting a question")
+    }
+      
+  }
 
   const show = () => {
     document.getElementById("light").style.display = "block";
@@ -32,18 +90,7 @@ function DiscussionForum() {
           <h1>Discussion Forum</h1>
 
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
-            voluptas sint voluptates iusto debitis ratione nostrum ut voluptatum
-            sit rem! Aspernatur magni fugiat corrupti dolorum praesentium, amet,
-            autem nihil doloremque quae debitis facere rerum incidunt maiores
-            culpa tempore ullam, tempora quaerat temporibus ducimus consequuntur
-            nesciunt. Commodi libero numquam laudantium, eveniet debitis,
-            dolorum esse aliquid reiciendis et quisquam sequi laborum fuga eos
-            minus provident deserunt maxime quibusdam. Et, ea. Aperiam,
-            repellat! Vel, quo exercitationem voluptatibus soluta consectetur id
-            hic corrupti culpa eveniet iure atque quisquam praesentium fugiat in
-            officia saepe nihil? Facilis quis illo totam ullam quia repellendus
-            voluptate molestiae officiis?
+            Let your curosity quench it's thirst.
           </p>
         </div>
 
@@ -69,15 +116,23 @@ function DiscussionForum() {
             />
             <br />
             <br />
-            <button id="submitQueBtn">Post Question</button>
+            <button id="submitQueBtn" onClick={postQuestion}>Post Question</button>
           </div>
           <div id="fade" className="blackOverlay"></div>
         </div>
 
+        {
+          questions.length>0 && questions.map((question,i) => {
+            return (
+              <DiscussionForumQuestion title={question.title} likes={question.upvoteCount} dislikes={question.downvoteCount} answers={question.answerCount} id={question.id} />
+            )
+          })
+        }
+
+        {/* <DiscussionForumQuestion />
         <DiscussionForumQuestion />
         <DiscussionForumQuestion />
-        <DiscussionForumQuestion />
-        <DiscussionForumQuestion />
+        <DiscussionForumQuestion /> */}
 
         <section id="footer">
           <Footer rel="#LandingPageTop" />

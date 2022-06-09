@@ -532,6 +532,12 @@ li:hover{
     font-weight: 600;
 }
 
+.DFQBodyQuestion p{
+    color: beige;
+    font-size: 25px;
+    font-weight: 600;
+}
+
 .DFQBodyFunctions{
     display: flex;
     justify-content: end;

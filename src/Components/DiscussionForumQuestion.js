@@ -1,26 +1,33 @@
 import React from "react";
 import "../Components/ComponentStyle.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
-function DiscussionForumQuestion() {
+function DiscussionForumQuestion(props) {
+  const navigate = useNavigate();
+  const navigateToQuestion = () => {
+    navigate('/queans',{
+      state:{
+        id:props.id
+      }
+    })
+  }
+
   return (
     <>
       <div className="container">
         <div className="DFQBody">
           <div className="DFQBodyQuestion">
-            <Link to="/queans">
-              <p>Java Linked list is not found</p>
-            </Link>
+              <p onClick={navigateToQuestion}>{props.title}</p>
           </div>
           <div className="DFQBodyFunctions">
             <div className="DFQBodyFunctionComment">
-              <strong>2</strong> Comment(s)
+              <strong>{props.answers}</strong> Answer(s)
             </div>
             <div className="DFQBodyFunctionLike">
-              <strong>3</strong> Like(s)
+              <strong>{props.likes}</strong> Like(s)
             </div>
             <div className="DFQBodyFunctionDislike">
-              <strong>1</strong> Dislike(s)
+              <strong>{props.dislikes}</strong> Dislike(s)
             </div>
           </div>
         </div>

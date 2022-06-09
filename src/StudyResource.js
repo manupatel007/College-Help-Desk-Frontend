@@ -91,6 +91,7 @@ function Resource() {
                       url={resource.url}
                       subject={resource.subject}
                       status={resource.user_liked}
+                      uniqueid={resource.id}
                     />
                   );
                 })}

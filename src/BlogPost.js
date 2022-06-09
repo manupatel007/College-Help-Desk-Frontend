@@ -36,53 +36,15 @@ function blogPost() {
       <section id="blogPostBody" style={{ color: "lightblue" }}>
         <div className="container">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta fuga
-            sint vel qui id, hic, omnis corporis deleniti facere adipisci
-            debitis natus autem quia ex ut officia incidunt temporibus! Aperiam,
-            non nihil eveniet doloribus rem aut recusandae porro sapiente quasi
-            a quod assumenda. Pariatur maiores magnam quas quisquam nisi, atque
-            eius odio quae, excepturi, ipsa magni optio quo cupiditate autem
-            maxime officiis nemo illo. In rem a ex neque suscipit voluptatum,
-            quisquam unde quam quo culpa quidem libero dolorem magnam non.
-            Laudantium provident rerum eum officia possimus fugiat, obcaecati
-            ipsa reiciendis sapiente, quod aperiam itaque mollitia veritatis
-            exercitationem a error ipsum placeat reprehenderit perspiciatis
-            recusandae earum vel? Facilis culpa aut, perspiciatis nemo
-            asperiores sunt vero minus quidem est inventore tenetur temporibus
-            fugit corrupti itaque impedit ratione ea suscipit harum, consectetur
-            voluptatem, quis ullam sed! Magnam corporis ab deleniti assumenda
-            ducimus. Ratione itaque incidunt tempore quasi nostrum laboriosam
-            similique reiciendis minus tenetur rerum. Atque obcaecati sed aut
-            illo modi dicta impedit vel nam maxime, commodi nulla delectus ab
-            quisquam omnis reiciendis. Illum praesentium laudantium odio
-            perspiciatis exercitationem libero, veniam sunt repellat obcaecati
-            architecto cum debitis quisquam tenetur beatae expedita, sint quo at
-            sed fugiat! Laboriosam dolores id similique sequi excepturi.
-            Mollitia.
+          True one-to-one customer engagement sounds good in theory, but many marketers aren’t sure how to actually get there. Enter AI. Used wisely, artificial intelligence yields a deeper understanding of customers across different contexts and channels. 
+
+AI can read signals and sense your customer’s unique intent – to purchase, to upgrade, and even to cancel – before she acts. Powered by real-time data, AI can serve up unique, relevant offers automatically, or guide customer-service reps (CSRs) to make the right offer at the right time. In highly regulated industries, AI can also be an invaluable transparency tool to demonstrate why you are presenting particular offers to specific customers and prove that no unconscious bias is at work.
           </p>
+          <br/>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta fuga
-            sint vel qui id, hic, omnis corporis deleniti facere adipisci
-            debitis natus autem quia ex ut officia incidunt temporibus! Aperiam,
-            non nihil eveniet doloribus rem aut recusandae porro sapiente quasi
-            a quod assumenda. Pariatur maiores magnam quas quisquam nisi, atque
-            eius odio quae, excepturi, ipsa magni optio quo cupiditate autem
-            maxime officiis nemo illo. In rem a ex neque suscipit voluptatum,
-            quisquam unde quam quo culpa quidem libero dolorem magnam non.
-            Laudantium provident rerum eum officia possimus fugiat, obcaecati
-            ipsa reiciendis sapiente, quod aperiam itaque mollitia veritatis
-            exercitationem a error ipsum placeat reprehenderit perspiciatis
-            recusandae earum vel? Facilis culpa aut, perspiciatis nemo
-            asperiores sunt vero minus quidem est inventore tenetur temporibus
-            fugit corrupti itaque impedit ratione ea suscipit harum, consectetur
-            voluptatem, quis ullam sed! Magnam corporis ab deleniti assumenda
-            ducimus. Ratione itaque incidunt tempore quasi nostrum laboriosam
-            similique reiciendis minus tenetur rerum. Atque obcaecati sed aut
-            illo modi dicta impedit vel nam maxime, commodi nulla delectus ab
-            quisquam omnis reiciendis. Illum praesentium laudantium odio
-            perspiciatis exercitationem libero, veniam sunt repellat obcaecati
-            architecto cum debitis quisquam tenetur beatae expedita, sint quo at
-            sed fugiat! Laboriosam dolores id similique sequi excepturi. Mollit.
+          AI has the potential to significantly improve the way your organization works, from decision-making to culture to bottom-line benefits. But don’t make the mistake of only applying AI in a few customer use cases, feeding it with data once a week and locking it away from the rest of the company. 
+
+The most compelling success stories come from organizations where AI is fueled by real-time data, delivered across all customer channels, and flexible enough to become more transparent when the situation demands. Getting there means combining several different AI capabilities, including:
           </p>
         </div>
       </section>

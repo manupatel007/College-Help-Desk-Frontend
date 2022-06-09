@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { CKEditor } from "@ckeditor/ckeditor5-react";
 import ClassicEditor from "@ckeditor/ckeditor5-build-classic";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import {
   BsHandThumbsUp,
   BsHandThumbsDown,
@@ -12,7 +12,70 @@ import Footer from "./Components/Footer";
 import DiscussionForumAnswer from "./Components/DiscussionForumAnswer";
 
 function DiscussionForumQueAnsPage() {
+  const location = useLocation();
   const [queText, setQueText] = useState("");
+  const [question, setQuestion] = useState({})
+  const [answers, setAnswers] = useState([])
+  const [updateQue, setupdateque] = useState(0)
+  const valueee = JSON.parse(localStorage.getItem("login"));
+
+  const postAnswer = () => {
+    if(valueee){
+      var headerObj = {
+        "Content-type": "application/json",
+        Authorization: "Bearer " + valueee.token,
+      };
+
+      fetch('https://collegebackenc.herokuapp.com/chats/addanswer/',{
+        method: "POST",
+        body: JSON.stringify({
+          author: 1,
+          title: "Nothing",
+          description: queText,
+          subjectTag:"general",
+          parentQuestionId:question.id
+        }),
+        headers:headerObj
+      })
+      .then((response) => {
+        return response.json();
+      })
+
+      // Displaying results to console
+      .then((json) => {
+        console.log(json);
+        setupdateque(updateQue+1);
+        // console.log(resources);
+      })
+      // .then(() => {
+      //     console.log(resources);
+      // })
+      .catch((error) => console.log(error));
+    }
+    else{
+      alert("You need to login for posting a question")
+    }
+      
+  }
+
+  const getQuestionDetails = () => {
+    fetch('https://collegebackenc.herokuapp.com/chats/question/'+location.state.id+'/')
+    .then((request) => {
+      return request.json();
+    })
+    .then((json) => {
+      console.log(json);
+      setQuestion({...json.Question})
+      setAnswers([...json.Answers])
+    })
+    .catch((errors)=>{
+      console.log(errors);
+    })
+  }
+
+  useEffect(() => {
+    getQuestionDetails();
+  }, [updateQue])
 
   return (
     <>
@@ -27,8 +90,7 @@ function DiscussionForumQueAnsPage() {
           <div className="detailedQuestion">
             <div className="queAnsQuestion">
               <h2>
-                Is there anyone that can help me with Balanced Brackets in
-                Python using Stack?
+                {question.title}
               </h2>
             </div>
             <div className="contentFunctionality">
@@ -39,16 +101,7 @@ function DiscussionForumQueAnsPage() {
               </div>
               <div className="queAnsContent">
                 <p>
-                  Modify the chkBracketsBal function so that the caller can
-                  supply the brackets to match as arguments to this function.
-                  The second argument should be a list of beginning brackets,
-                  and the third argument should be a list of ending brackets.
-                  The pairs of brackets at each position in the two lists; that
-                  is, position 0 in the two lists might have [ and ],
-                  respectively. You should be able to modify the code for the
-                  function so that it does not reference any literal bracket
-                  symbols, but just uses the list arguments. (Hint: The
-                  method index returns the position of an item in a list.) 
+                  {question.description}
                 </p>
               </div>
             </div>
@@ -57,9 +110,13 @@ function DiscussionForumQueAnsPage() {
           <hr style={{ color: "lightgray" }} />
           <div className="row">
             <div className="col-lg-8 col-md-12 col-sm-12">
-              <DiscussionForumAnswer />
-              <DiscussionForumAnswer />
-              <DiscussionForumAnswer />
+              {
+                answers.length>0 && answers.map((answer, i) => {
+                  return (
+                    <DiscussionForumAnswer description={answer.description} />
+                  )
+                })
+              }
             </div>
             <div className="col-lg-4 col-md-12 col-sm-12"></div>
           </div>
@@ -78,7 +135,7 @@ function DiscussionForumQueAnsPage() {
               setQueText(data);
             }}
           />
-          <button id="submitAnsBtn">Post Answer</button>
+          <button id="submitAnsBtn" onClick={postAnswer}>Post Answer</button>
         </section>
       </div>
 

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./ComponentStyle.css";
 import { BsDownload, BsStar, BsStarFill } from "react-icons/bs";
+import Info from "../GlobalVars";
 
 function ResourceCard(props) {
   const navigate = () => {
@@ -48,20 +49,12 @@ function ResourceCard(props) {
             </div>
             <div className="row">
               <div className="col-lg-4 col-md-4 col-sm-4">
-                {status === false ? (
-                  <button
-                    type="button"
-                    id="readBtn"
-                    class="btn btn-light"
-                    onClick={() => makeFavourite()}
-                  >
-                    <BsStar size={15} />
-                  </button>
-                ) : (
-                  <button type="button" id="readBtn" class="btn btn-light">
-                    <BsStarFill />
-                  </button>
-                )}
+              {Info.islogin === true ?
+                (status === false ? <button type="button" id="readBtn" class="btn btn-light" onClick={() => makeFavourite()}><BsStar size={15} /></button> : <button type="button" id="readBtn" class="btn btn-light"><BsStarFill /></button>)
+                :
+                ""
+              }
+          
               </div>
               <div className="col-lg-3 col-md-3 col-sm-3"></div>
               <div id="blogContent" className="col-lg-5 col-md-5 col-sm-5">

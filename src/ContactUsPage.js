@@ -14,6 +14,13 @@ function ContactUsPage() {
     document.title = "Contact Us";
   }, []);
 
+  const sendtobackend = () => {
+    document.getElementById('exampleFormControlInput1').value="";
+    document.getElementById('exampleFormControlInput2').value="";
+    document.getElementById('exampleFormControlTextarea1').value="";
+
+  }
+
   return (
     <>
       <section id="contactUsPageTop">
@@ -85,7 +92,7 @@ function ContactUsPage() {
                     rows="3"
                   ></textarea>
                   <br />
-                  <button id="contactBtn">
+                  <button id="contactBtn" onClick={sendtobackend}>
                     Send <BsCursor />
                   </button>
                 </div>

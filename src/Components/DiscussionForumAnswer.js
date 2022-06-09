@@ -1,20 +1,12 @@
 import React from "react";
 import "../Components/ComponentStyle.css";
 
-function DiscussionForumAnswer() {
+function DiscussionForumAnswer(props) {
   return (
     <>
       <div className="DFABody">
-        <div className="DFABodyName">ANSWER 1</div>
-        <div className="DFABodyAnswer">
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum,
-            consequatur debitis! Facere reiciendis eius quibusdam. Fugiat
-            aspernatur, hic alias assumenda animi, iste distinctio quia pariatur
-            laborum cupiditate, facilis accusamus sint quis modi quasi at
-            repellat dignissimos veritatis vel debitis odit vero a. Vel,
-            excepturi harum?
-          </p>
+        <div className="DFABodyName">ANSWER</div>
+        <div className="DFABodyAnswer" dangerouslySetInnerHTML={{__html:props.description}}>
         </div>
         <div className="DFABodyFunctions">
           <div
@@ -25,7 +17,7 @@ function DiscussionForumAnswer() {
           >
             🤩
           </div>
-          <div className="DFABodyFunctionCount">2</div>
+          <div className="DFABodyFunctionCount">0</div>
           <div
             className="DFABodyFunctionDislike"
             data-toggle="tooltip"

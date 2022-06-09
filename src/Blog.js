@@ -24,11 +24,8 @@ function Blog() {
 
             <br />
             <div id="blogheadDiv2" className="row">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
-                quam accusamus atque, necessitatibus sint, tenetur perferendis
-                maiores error illum, voluptates repellendus natus iure
-                voluptatibus dolore dignissimos sed ullam in vel earum eum?
+              <p align="center">
+              Gain and share knowledge from peers
               </p>
             </div>
             <br />
